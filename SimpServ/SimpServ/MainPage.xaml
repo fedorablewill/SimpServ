@@ -7,7 +7,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+<<<<<<< HEAD
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
+=======
+    <Grid Background="#FFDEDEDE">
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Height="87" Margin="539,548,0,0" VerticalAlignment="Top" Width="297" FontSize="30" Background="#FF474747" Foreground="White" Click="btnLogin_Click"/>
+        <Image x:Name="imgLogo" HorizontalAlignment="Left" Height="151" Margin="532,114,0,0" VerticalAlignment="Top" Source="Assets/WideLogo.png" Width="310"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" Height="19" Margin="570,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="19" Margin="570,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Text="20059"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="19" Margin="570,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Height="32" Margin="570,452,0,0" VerticalAlignment="Top" Width="238" IsPasswordRevealButtonEnabled="True"/>
+        <PasswordBox x:Name="txtSalt" HorizontalAlignment="Left" Height="32" Margin="570,512,0,0" VerticalAlignment="Top" Width="238" IsPasswordRevealButtonEnabled="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="570,238,0,0" TextWrapping="Wrap" Text="IP Address" VerticalAlignment="Top" Width="238" Foreground="Black" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="570,304,0,0" TextWrapping="Wrap" Text="Port" VerticalAlignment="Top" Width="238" Foreground="Black" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="570,364,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="238" Foreground="Black" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="570,424,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="238" Foreground="Black" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="570,486,0,0" TextWrapping="Wrap" Text="Salt" VerticalAlignment="Top" Width="238" Foreground="Black" FontSize="22"/>
+>>>>>>> Created graphics, login splash, and communicator
     </Grid>
 </Page>
