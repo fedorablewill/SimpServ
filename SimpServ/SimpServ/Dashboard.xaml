@@ -8,6 +8,29 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}" Margin="41,0,0,665"/>
+        <TextBlock x:Name="pageTitle" Text="SimpServ" IsHitTestVisible="false" Style="{StaticResource PageHeaderTextStyle}" Margin="125,0,977,671"/>
+        <TextBlock x:Name="headerPlayers" HorizontalAlignment="Left" Height="38" Margin="124,146,0,0" TextWrapping="Wrap" Text="Player Managment" VerticalAlignment="Top" Width="300" FontSize="30"/>
+        <TextBlock x:Name="txtServerName" HorizontalAlignment="Left" Height="26" Margin="872,59,0,0" TextWrapping="Wrap" Text="A Minecraft Server" VerticalAlignment="Top" Width="440" TextAlignment="Right" FontSize="24"/>
+        <TextBlock x:Name="txtServerData" HorizontalAlignment="Left" Height="26" Margin="872,85,0,0" TextWrapping="Wrap" Text="Unknown     ?/? Players" VerticalAlignment="Top" Width="440" TextAlignment="Right" FontSize="18"/>
+        <Image x:Name="imgPlayer1" HorizontalAlignment="Left" Height="60" Margin="126,201,0,0" VerticalAlignment="Top" Width="60" Source="Assets/default50.png"/>
+        <Image x:Name="imgPlayer2" HorizontalAlignment="Left" Height="60" Margin="198,201,0,0" VerticalAlignment="Top" Width="60" Source="Assets/default50.png"/>
+        <Image x:Name="imgPlayer3" HorizontalAlignment="Left" Height="60" Margin="272,201,0,0" VerticalAlignment="Top" Width="60" Source="Assets/default50.png"/>
+        <Image x:Name="imgPlayer4" HorizontalAlignment="Left" Height="60" Margin="344,201,0,0" VerticalAlignment="Top" Width="60" Source="Assets/default50.png"/>
+        <Image x:Name="imgPlayer5" HorizontalAlignment="Left" Height="60" Margin="416,201,0,0" VerticalAlignment="Top" Width="60" Source="Assets/default50.png"/>
+        <Button Content="Player List" HorizontalAlignment="Left" Height="92" Margin="124,271,0,0" VerticalAlignment="Top" Width="350" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Chat" HorizontalAlignment="Left" Height="92" Margin="124,373,0,0" VerticalAlignment="Top" Width="350" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Permissions" HorizontalAlignment="Left" Height="92" Margin="124,475,0,0" VerticalAlignment="Top" Width="350" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Economy" HorizontalAlignment="Left" Height="92" Margin="124,577,0,0" VerticalAlignment="Top" Width="350" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <ProgressRing x:Name="loading" HorizontalAlignment="Left" Margin="1317,61,0,0" VerticalAlignment="Top" Width="44" Height="44"/>
+        <Button Content="Stats" HorizontalAlignment="Left" Height="194" Margin="562,201,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <TextBlock x:Name="headerPlayers_Copy" HorizontalAlignment="Left" Height="38" Margin="562,146,0,0" TextWrapping="Wrap" Text="Server Managment" VerticalAlignment="Top" Width="300" FontSize="30"/>
+        <Button Content="Dynmap" HorizontalAlignment="Left" Height="194" Margin="762,201,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Console" HorizontalAlignment="Left" Height="194" Margin="962,201,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Files" HorizontalAlignment="Left" Height="194" Margin="562,405,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Worlds" HorizontalAlignment="Left" Height="194" Margin="762,405,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Plugins" HorizontalAlignment="Left" Height="194" Margin="962,405,0,0" VerticalAlignment="Top" Width="194" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="More" HorizontalAlignment="Left" Height="60" Margin="562,609,0,0" VerticalAlignment="Top" Width="297" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
+        <Button Content="Settings" HorizontalAlignment="Left" Height="60" Margin="859,609,0,0" VerticalAlignment="Top" Width="297" Background="#FFCFCFCF" Foreground="#FF494949" FontSize="22"/>
     </Grid>
 </Page>
